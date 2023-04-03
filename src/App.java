@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.*;
 
 public class App {
     public static void main(String[] args) {
@@ -6,9 +7,13 @@ public class App {
             FileReader fileReader = new FileReader("C:\\Users\\foyko\\Desktop\\Motor.java");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
+            List<String> satirlar = new ArrayList<String>();
             String satir;
             while ((satir = bufferedReader.readLine()) != null) {
-                System.out.println(satir);
+                satirlar.add(satir);
+            }
+            for (String satir1 : satirlar) {
+                System.out.println(satir1);
             }
 
             bufferedReader.close();
