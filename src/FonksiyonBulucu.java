@@ -28,5 +28,6 @@ public class FonksiyonBulucu {
         System.out.println("Toplam fonksiyon sayısı: " + fonksiyonSayisi);
         System.out.println("Fonksiyon isimleri: " + fonksiyonIsimleri);
     }
+    
 }
 
