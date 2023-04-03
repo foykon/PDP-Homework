@@ -18,7 +18,6 @@ public class FonksiyonBulucu {
     }
 
     public void fonksiyonlariAnalizEt() {
-        ArrayList<String> fonksiyonIsimleri = new ArrayList<>();
 
         String  fonksiyonRegex = "^\\s*(public|private|protected)?\\s+(static\\s+)?(final\\s+)?(synchronized\\s+)?(\\w+\\s+)?\\w+\\s*\\(.*\\)\\s*((throws\\s+\\w+(\\s*,\\s*\\w+)*)?\\s*)*\\{";
         Pattern pattern = Pattern.compile(fonksiyonRegex);
@@ -29,9 +28,10 @@ public class FonksiyonBulucu {
                 if(!firstTime){
                     yorumSayisiYazdir();
                 }
+                
                 firstTime=false;
                 fonksiyonIsmi = satir.substring(satir.indexOf(' ') + 1, satir.indexOf('('));
-                fonksiyonIsimleri.add(fonksiyonIsmi);
+                
                 fonksiyonIsimYazdir();
                 
             }
@@ -73,6 +73,7 @@ public class FonksiyonBulucu {
         } else if (line.contains("//")) { // tek satırlı yorum
             singleLineComments++;
         }
+        
     }
 
     public void yorumSayisiYazdir(){
