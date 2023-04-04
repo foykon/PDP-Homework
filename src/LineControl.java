@@ -1,8 +1,17 @@
+/**
+*
+* @author Furkan Yıldız G201210014 2.öğretim/A grubu
+* @since 03.04.2023
+* <p>
+* mainden aldığı satırların içinde yorum varsa yorumarı çeşitlerine ayıran ve fonksiyonun ismini bulan class. zaten gerekli tüm bilgiler fonksiyonların javadoclarında bulunmakta
+* </p>
+*/
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class LineControl {
+    private String  regexOfFunc = "^\\s*(public|private|protected)?\\s+(static\\s+)?(final\\s+)?(synchronized\\s+)?(\\w+\\s+)?\\w+\\s*\\(.*\\)\\s*((throws\\s+\\w+(\\s*,\\s*\\w+)*)?\\s*)*\\{";
     private String functionName=""; 
     private int singleLineComments = 0;
     private int multiLineComments = 0;
@@ -29,7 +38,6 @@ public class LineControl {
      * Gene her satır için "findComments" fonkisyonu çağrılır ve her satır için yorumlar bulunarak çeşitlerine ayrılır.
      */
     public void findFunctionsAndSpiltTheirComments() {
-        String  regexOfFunc = "^\\s*(public|private|protected)?\\s+(static\\s+)?(final\\s+)?(synchronized\\s+)?(\\w+\\s+)?\\w+\\s*\\(.*\\)\\s*((throws\\s+\\w+(\\s*,\\s*\\w+)*)?\\s*)*\\{";
         Pattern pattern = Pattern.compile(regexOfFunc);
         for (String line : lines) {
             Matcher matcher = pattern.matcher(line);

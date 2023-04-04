@@ -1,3 +1,11 @@
+/**
+*
+* @author Furkan Yıldız G201210014 2.öğretim/A grubu
+* @since 04.04.2023
+* <p>
+* txtye yazmak için kullandığımmız sınıf javadoclarda ayrıntı mevcut.
+* </p>
+*/
 import java.io.*;
 
 public class TxtWriter {

@@ -1,3 +1,11 @@
+/**
+*
+* @author Furkan Yıldız G201210014 2.öğretim/A grubu
+* @since 03.04.2023
+* <p>
+* verilen dosyayı list formatında linecontrol sınıfına ilettiğimiz main
+* </p>
+*/
 import java.io.*;
 import java.util.*;
 
