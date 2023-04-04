@@ -6,8 +6,10 @@
 * verilen dosyayı list formatında linecontrol sınıfına ilettiğimiz main
 * </p>
 */
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.io.IOException;
 
 public class App {
     public static void main(String[] args) {
