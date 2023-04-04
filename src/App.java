@@ -9,13 +9,19 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.io.IOException;
 
 public class App {
     public static void main(String[] args) {
         //dışardan alınan dosyalarını tek tek okuyup arraylist içinde biriktiriyoruz
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Lütfen dosyanın adını giriniz: ");
+        String path = scanner.nextLine();
+        scanner.close();
+        
         try {
-            FileReader fileReader = new FileReader("C:\\Users\\foyko\\Desktop\\Motor.java");
+            FileReader fileReader = new FileReader(path);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             ArrayList<String> lines = new ArrayList<String>();
             String line;
