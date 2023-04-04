@@ -141,12 +141,11 @@ public class LineControl {
      * yazdırdıktan sonra "resetVariables" fonksiyonunu çağırır.
      */
     public void getOutPut(){
-        System.out.println(functionName);
-        System.out.println("--------------");
-        System.out.println("Tek satırlı yorum sayısı: " + singleLineComments);
-        System.out.println("Çoklu satırlı yorum sayısı: " + multiLineComments);
-        System.out.println("Javadoc yorum sayısı: " + javadocComments);
-        System.out.println("****************************************************************");
+        System.out.println("Fonksiyon Adı : " + functionName);
+        System.out.println("    Tek satır yorum sayısı              : " + singleLineComments);
+        System.out.println("    Çoklu satırlı yorum sayısı          : " + multiLineComments);
+        System.out.println("    Javadoc yorum sayısı                : " + javadocComments);
+        System.out.println("--------------------------------------------");
         resetVariables();
     
     }
