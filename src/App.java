@@ -16,7 +16,7 @@ public class App {
             //     System.out.println(satir1);
             // }
 
-            FonksiyonBulucu bulucu=new FonksiyonBulucu(satirlar);
+            FonksiyonBulucu bulucu=new FonksiyonBulucu(satirlar,new TxtWriter());
             bulucu.fonksiyonlariAnalizEt();
             bufferedReader.close();
         } catch (IOException e) {

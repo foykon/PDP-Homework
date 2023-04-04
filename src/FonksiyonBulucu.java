@@ -11,10 +11,14 @@ public class FonksiyonBulucu {
     private boolean insideJavadocComment = false;
     private boolean firstTime=true;
 
-    private ArrayList<String> satirlar;
+    
 
-    public FonksiyonBulucu(ArrayList<String> satirlar) {
+    private ArrayList<String> satirlar;
+    private TxtWriter txtWriter;
+
+    public FonksiyonBulucu(ArrayList<String> satirlar,TxtWriter txtWriter) {
         this.satirlar = satirlar;
+        this.txtWriter=txtWriter;
     }
 
     public void fonksiyonlariAnalizEt() {
@@ -47,15 +51,18 @@ public class FonksiyonBulucu {
         //javadoc
         if (line.contains("/**")) { // başlangıç javadoc yorumu
             if (line.contains("*/")) { // tek satırlık bir javadoc yorumu
-               
+                txtWriter.javaDocWriter(line);
                 javadocComments++;
             } else {
+                txtWriter.javaDocWriter(line);
                 insideJavadocComment = true;
             }
         } else if (line.contains("*/") && insideJavadocComment) { // javadoc yorumunun sonu
+            txtWriter.javaDocWriter(line);
             insideJavadocComment = false;
             javadocComments++;
         } else if (line.startsWith("*") && insideJavadocComment) { // javadoc yorumunun ortası
+            txtWriter.javaDocWriter(line);
             
         //çoklu satır
         } else if (line.contains("/*")) { // başlangıç çoklu satırlı yorum
