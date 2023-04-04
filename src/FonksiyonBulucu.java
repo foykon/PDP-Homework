@@ -48,7 +48,8 @@ public class FonksiyonBulucu {
 
     public void countComments(String line) {
         line = line.trim(); // boşlukları kaldır
-        //javadoc
+        
+            //javadoc
         if (line.contains("/**")) { // başlangıç javadoc yorumu
             if (line.contains("*/")) { // tek satırlık bir javadoc yorumu
                 txtWriter.javaDocWriter(line);
@@ -63,22 +64,27 @@ public class FonksiyonBulucu {
             javadocComments++;
         } else if (line.startsWith("*") && insideJavadocComment) { // javadoc yorumunun ortası
             txtWriter.javaDocWriter(line);
-            
-        //çoklu satır
+        
+            //çoklu satır
         } else if (line.contains("/*")) { // başlangıç çoklu satırlı yorum
             if (line.contains("*/")) { // tek satırlık bir yorum
+                txtWriter.cokSatirWriter(line);
                 multiLineComments++;
             } else {
+                txtWriter.cokSatirWriter(line);
                 insideMultiLineComment = true;
             }
         } else if (line.contains("*/") && insideMultiLineComment) { // çoklu satırlı yorumun sonu
+            txtWriter.cokSatirWriter(line);
             insideMultiLineComment = false;
             multiLineComments++;
         } else if (line.startsWith("*") && insideMultiLineComment) { // çoklu satırlı yorumun ortası
-            
-        //tekli satır
+            txtWriter.cokSatirWriter(line);
+        
+            //tekli satır
         } else if (line.contains("//")) { // tek satırlı yorum
             singleLineComments++;
+            txtWriter.tekSatirWriter(line);
         }
         
     }
