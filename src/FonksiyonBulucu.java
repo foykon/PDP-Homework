@@ -11,6 +11,9 @@ public class FonksiyonBulucu {
     private boolean insideJavadocComment = false;
     private boolean firstTime=true;
 
+    private boolean insideFunction = true;
+    private int numberOfBrace = 0;
+
     
 
     private ArrayList<String> satirlar;
@@ -28,20 +31,18 @@ public class FonksiyonBulucu {
 
         for (String satir : satirlar) {
             Matcher matcher = pattern.matcher(satir);
+            
             if (matcher.find()) {
-                if(!firstTime){
-                    yorumSayisiYazdir();
-                }
-                
+                insideFunction = true;
                 firstTime=false;
                 fonksiyonIsmi = satir.substring(satir.indexOf(' ') + 1, satir.indexOf('('));
                 
                 fonksiyonIsimYazdir();
                 
             }
+            insideFunctionController(satir);
             countComments(satir);
         }
-        yorumSayisiYazdir();
         // System.out.println("Toplam fonksiyon sayısı: " + fonksiyonSayisi);
         // System.out.println("Fonksiyon isimleri: " + fonksiyonIsimleri);
     }
@@ -87,6 +88,15 @@ public class FonksiyonBulucu {
             txtWriter.tekSatirWriter(line);
         }
         
+    }
+
+    public void insideFunctionController(String line){
+        if(insideFunction == true){
+            if(line.contains("}"))                  numberOfBrace--;
+            if(line.contains("{"))                  numberOfBrace++;
+            
+            if(numberOfBrace == 1 && !firstTime)    { insideFunction=false; yorumSayisiYazdir(); }        
+        }
     }
 
     public void yorumSayisiYazdir(){

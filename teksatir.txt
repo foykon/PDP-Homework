@@ -1,0 +1,48 @@
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //
+calisiyor = false; // false yapılıyor
+// motor no getir
+// durum belirlenmesi //

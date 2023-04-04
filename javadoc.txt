@@ -1,4 +1,3 @@
-s*/
 /**
 * Varsayılan kurucu fonksiyon
 */
@@ -12,4 +11,214 @@ s*/
 */
 /**
 * Motorun durdurulması //
-s*/
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/
+/**
+* Varsayılan kurucu fonksiyon
+*/
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+/**
+* calisiyor true yapılıyor
+*/
+/**
+* Motorun durdurulması //
+*/

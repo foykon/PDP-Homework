@@ -11,7 +11,7 @@ public class TxtWriter {
       writer.write(line);
       writer.newLine();
       writer.close();
-      System.out.println("Dosya yazıldı."+line);
+      //System.out.println("Dosya yazıldı."+line);
     } catch (IOException e) {
       System.out.println("Bir hata oluştu.");
       e.printStackTrace();
