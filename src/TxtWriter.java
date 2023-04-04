@@ -6,7 +6,9 @@
 * txtye yazmak için kullandığımmız sınıf javadoclarda ayrıntı mevcut.
 * </p>
 */
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class TxtWriter {
   private String javadocPath = "javadoc.txt";
