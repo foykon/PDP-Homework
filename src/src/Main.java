@@ -17,7 +17,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         //dışardan alınan dosyalarını tek tek okuyup arraylist içinde biriktiriyoruz
-        //java -jar dist\uygulama.jar Motor.java
+        //java -jar dist\Program.jar Motor.java
         if (args.length == 0) {
             System.out.println("Bir dosya yolu girin.");
             System.exit(0);
