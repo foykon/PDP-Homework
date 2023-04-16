@@ -1,3 +1,4 @@
+package src;
 /**
 *
 * @author Furkan Yıldız G201210014 2.öğretim/A grubu
