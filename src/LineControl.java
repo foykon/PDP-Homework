@@ -81,12 +81,12 @@ public class LineControl {
                 insideJavadocComment = true;
             
             }
-        } else if (line.contains("*/") && insideJavadocComment) { // javadoc yorumunun sonu
+        } else if (insideJavadocComment && line.contains("*/") ) { // javadoc yorumunun sonu
             txtWriter.javaDocWriter(line);
             insideJavadocComment = false;
             javadocComments++;
         
-        } else if (line.startsWith("*") && insideJavadocComment) { // javadoc yorumunun ortası
+        } else if (insideJavadocComment && line.startsWith("*") ) { // javadoc yorumunun ortası
             txtWriter.javaDocWriter(line);
         
             
@@ -102,12 +102,12 @@ public class LineControl {
             
             }
         
-        } else if (line.contains("*/") && insideMultiLineComment) { // çoklu satırlı yorumun sonu
+        } else if (insideMultiLineComment && line.contains("*/") ) { // çoklu satırlı yorumun sonu
             txtWriter.cokSatirWriter(line);
             insideMultiLineComment = false;
             multiLineComments++;
         
-        } else if (line.startsWith("*") && insideMultiLineComment) { // çoklu satırlı yorumun ortası
+        } else if (insideMultiLineComment && line.startsWith("*") ) { // çoklu satırlı yorumun ortası
             txtWriter.cokSatirWriter(line);
         
         
