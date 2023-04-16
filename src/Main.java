@@ -1,3 +1,4 @@
+package src;
 /**
 *
 * @author Furkan Yıldız G201210014 2.öğretim/A grubu
@@ -6,22 +7,25 @@
 * verilen dosyayı list formatında linecontrol sınıfına ilettiğimiz main
 * </p>
 */
+
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.io.IOException;
 
-public class App {
+public class Main {
     public static void main(String[] args) {
         //dışardan alınan dosyalarını tek tek okuyup arraylist içinde biriktiriyoruz
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Lütfen dosyanın adını giriniz: ");
-        String path = scanner.nextLine();
-        scanner.close();
+        if (args.length == 0) {
+            System.out.println("Bir dosya yolu girin.");
+            System.exit(0);
+        }
+        String filePath = args[0];
+        System.out.println("dosyanın adı: " + filePath);
         
         try {
-            FileReader fileReader = new FileReader(path);
+            FileReader fileReader = new FileReader(filePath);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             ArrayList<String> lines = new ArrayList<String>();
             String line;
