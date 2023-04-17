@@ -18,13 +18,13 @@ public class Main {
     public static void main(String[] args) {
         //dışardan alınan dosyalarını tek tek okuyup arraylist içinde biriktiriyoruz
         //java -jar dist\Program.jar Motor.java
-        if (args.length == 0) {
-            System.out.println("Bir dosya yolu girmediniz.");
-            System.exit(0);
-        }
-        String filePath = args[0];
-        System.out.println("dosyanın adı: " + filePath);
-        
+        // if (args.length == 0) {
+        //     System.out.println("Bir dosya yolu girmediniz.");
+        //     System.exit(0);
+        // }
+        // 
+        // System.out.println("dosyanın adı: " + filePath);
+        String filePath = "Deneme.java";
         try {
             FileReader fileReader = new FileReader(filePath);
             BufferedReader bufferedReader = new BufferedReader(fileReader);

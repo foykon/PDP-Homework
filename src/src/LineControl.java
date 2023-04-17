@@ -70,9 +70,20 @@ public class LineControl {
      */
     public void findComments(String line) {
         line = line.trim(); // boşlukları kaldır
-            
+        
+        if (line.contains("/**/")){
+            multiLineComments++;
+        }
+
             //javadoc
-        if (line.contains("/**")) { // başlangıç javadoc yorumu
+        else if (line.contains("/**")) { // başlangıç javadoc yorumu
+            if(line.contains("//")){
+                if(line.indexOf("//") < line.indexOf("/**")){
+                    singleLineComments++;
+                    return;
+                }
+            }
+
             if (line.contains("*/")) { // tek satırlık bir javadoc yorumu
                 txtWriter.javaDocWriter(line);
                 javadocComments++;
@@ -93,6 +104,12 @@ public class LineControl {
             
             //çoklu satır
         } else if (line.contains("/*")) { // başlangıç çoklu satırlı yorum
+            if(line.contains("//")){
+                if(line.indexOf("//") < line.indexOf("/*")){
+                    singleLineComments++;
+                    return;
+                }
+            }
             if (line.contains("*/")) { // tek satırlık bir yorum
                 txtWriter.cokSatirWriter(line);
                 multiLineComments++;
