@@ -19,7 +19,7 @@ public class Main {
         //dışardan alınan dosyalarını tek tek okuyup arraylist içinde biriktiriyoruz
         //java -jar dist\Program.jar Motor.java
         if (args.length == 0) {
-            System.out.println("Bir dosya yolu girin.");
+            System.out.println("Bir dosya yolu girmediniz.");
             System.exit(0);
         }
         String filePath = args[0];
